@@ -1,6 +1,5 @@
+	// alert("this is working");
 $(document).ready(function() {
-
-	alert("some shit");
 
 	//DURING PAGE LOAD
 	$(window).load(function() {
