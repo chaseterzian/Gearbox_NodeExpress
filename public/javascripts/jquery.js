@@ -45,7 +45,7 @@ $(document).ready(function() {
 		$('.home').toggle('hide');
 		$('.hide-this').toggle('hide');
 		$('.hide-then-show').show('.hide-then-show');
-		
+
 		$('#report-button').hide();
 		$('#report-button').css('background-color', 'red');
 		setTimeout(function() {
@@ -86,7 +86,7 @@ $(document).ready(function() {
 		// 0,1,2,6,7,8,9
 		carMovementAndPositionVisuals(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 15);
 		// 0,1,2,3,4,5,6,7,8,9,10
-		carModelFromBack(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 20);
+		carModelFromBack(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 15);
 		// 0,1,2,3,4,5,6,7,8,9,10
 		// steeringWheelModel(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 15);
 		// 0,1,2,3,4,5,6,10
@@ -94,9 +94,9 @@ $(document).ready(function() {
 		// 0,1,2,6
 		reportContentAccelerometerVisuals(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 10);
 		// 0,1,2,3,4,5,6,7,8,9,10
-		movementXy1Point(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 25);
+		movementXy1Point(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 20);
 		//0,1,2,3,4,6,7,8,10
-		movementXy1PointForTesting(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 25);
+		movementXy1PointForTesting(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 20);
 
 	});
 	$('form').on('submit', function(e) {
