@@ -20,7 +20,7 @@ video{
 }
 
 .bg-image {
-  background-image: url("ferrariGarage.jpg");
+  background-image: url("../images/ferrariGarage.jpg");
   background-width: 100%;
   background-height: 100%;
   background-repeat: no-repeat;
