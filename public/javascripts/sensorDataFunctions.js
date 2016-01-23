@@ -930,19 +930,6 @@ function movementXy1PointForTesting(data, start, stop, multiX, multiY, dropDataP
 // 	var int = 0;
 // 	for (var x=start, ii=0; x<stop; x=x + dropDataPoints, ii=ii+1) {
 // 		setTimeout(function () {
-// 			var dataStableX = 0;
-// 			var dataStableY = 0;
-// 			var dataStableZ = 0;
-// 			var incForStable = 0;
-// 				while (incForStable < visualsStablilizerNumber) { 
-// 					dataStableX = dataStableX + data[start+incForStable][0];
-// 					dataStableY = dataStableY + data[start+incForStable][1];
-// 					dataStableZ = dataStableZ + data[start+incForStable][2];
-// 					incForStable++;
-// 				} 
-// 				dataStableX = dataStableX/visualsStablilizerNumber;
-// 				dataStableY = dataStableY/visualsStablilizerNumber;
-// 				dataStableZ = dataStableZ/visualsStablilizerNumber;
 
 // 			ctx.canvas.width  = window.innerWidth;
 // 			ctx.canvas.height = window.innerHeight;
@@ -953,20 +940,23 @@ function movementXy1PointForTesting(data, start, stop, multiX, multiY, dropDataP
 // 				ctx.beginPath(); ctx.lineTo(-325,0); ctx.lineTo(325,0); ctx.stroke(); ctx.closePath(); 
 // 				ctx.beginPath(); ctx.lineTo(0,325); ctx.lineTo(0,-325); ctx.stroke(); ctx.closePath();
 
-// 				if (dataStableX >= redlineX || dataStableX < -redlineX) { ctx.fillStyle=("red"); }
-// 				ctx.beginPath(); ctx.arc(-200, -300, 50, 50, Math.PI, true); ctx.stroke();//LFront
-// 				ctx.beginPath(); ctx.arc(200, -300, 50, 50, Math.PI, true); ctx.stroke();//RFront
-// 				ctx.beginPath(); ctx.arc(-200, 300, 50, 50, Math.PI, true); ctx.stroke();//LRear
-// 				ctx.beginPath(); ctx.arc(200, 300, 50, 50, Math.PI, true); ctx.stroke();//RRear
-// 				if (dataStableY >= redlineY || dataStableY < -redlineY) { ctx.fillStyle=("red"); }
-// 				else { ctx.fillStyle=("black") }
+// 				if (data[x][0] < redlineX || data[x][0] < -redlineX) {
+// 					console.log(data[x][0]);
+// 					console.log(data[x][1]); 
+// 					ctx.fillStyle=("green"); 
+// 					ctx.beginPath(); ctx.arc(-200, -300, 50, 50, Math.PI, true); ctx.stroke();//LFront
+// 					ctx.beginPath(); ctx.arc(200, -300, 50, 50, Math.PI, true); ctx.stroke();//RFront
+// 					ctx.beginPath(); ctx.arc(-200, 300, 50, 50, Math.PI, true); ctx.stroke();//LRear
+// 					ctx.beginPath(); ctx.arc(200, 300, 50, 50, Math.PI, true); ctx.stroke();//RRear
+// 				}
+// 				if (data[x][1] >= redlineY || data[x][1] >= -redlineY) { 
+// 					ctx.fillStyle=("red"); 
+// 					ctx.beginPath(); ctx.arc(-200, -300, 50, 50, Math.PI, true); ctx.stroke();//LFront
+// 					ctx.beginPath(); ctx.arc(200, -300, 50, 50, Math.PI, true); ctx.stroke();//RFront
+// 					ctx.beginPath(); ctx.arc(-200, 300, 50, 50, Math.PI, true); ctx.stroke();//LRear
+// 					ctx.beginPath(); ctx.arc(200, 300, 50, 50, Math.PI, true); ctx.stroke();//RRear
 
-// 				// ctx.beginPath(); ctx.arc(-200, -300, 50, 50, Math.PI, true); ctx.stroke();//LFront
-// 				// ctx.beginPath(); ctx.arc(200, -300, 50, 50, Math.PI, true); ctx.stroke();//RFront
-// 				// ctx.beginPath(); ctx.arc(-200, 300, 50, 50, Math.PI, true); ctx.stroke();//LRear
-// 				// ctx.beginPath(); ctx.arc(200, 300, 50, 50, Math.PI, true); ctx.stroke();//RRear
-// 				// ctx.lineWidth = 10;	
-	  			
+// 				}	
 
 // 				start += dropDataPoints;
 // 				int += dropDataPoints;

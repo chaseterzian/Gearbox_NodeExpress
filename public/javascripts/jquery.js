@@ -97,7 +97,7 @@ $(document).ready(function() {
 		movementXy1Point(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 20);
 		//0,1,2,3,4,6,7,8,10
 		movementXy1PointForTesting(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 20);
-		                tireForces(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 2, 1, 1);
+		                tireForces(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 10);
 
 	});
 	$('form').on('submit', function(e) {
