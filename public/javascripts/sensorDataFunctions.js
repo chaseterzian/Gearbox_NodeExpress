@@ -198,6 +198,12 @@ function reportDetailsFull(data, start, stop, dropDataPoints, redlineX, redlineY
 		for (var x=start, ii=0; x<stop; x=x + dropDataPoints, ii=ii+dropDataPoints) {
 			setTimeout(function () {
 
+				// ctx.fillStyle=("black");
+				// setTimeout(function() {
+				// 	var goodDriver = document.getElementById('text-div-good-driver');
+				// 		goodDriver.innerHTML = "- No swerving, heavy braking/acceleration or aggressive turning has been detected.";
+				// }, 4000);
+
 				if (data[start][2] >= 2*g) {//BUMP
 					ctx.fillStyle=("red");
 					fullReportDataStored.push(
@@ -353,12 +359,6 @@ function reportDetailsFull(data, start, stop, dropDataPoints, redlineX, redlineY
 				timer += 8;//?
 
 			}, data[ii][31]);//MS
-
-			ctx.fillStyle=("black");
-			setTimeout(function() {
-				var goodDriver = document.getElementById('text-div-good-driver');
-					goodDriver.innerHTML = "- No swerving, heavy braking/acceleration or aggressive turning has been detected.";
-			}, 4000);
 
 	}
 }//LOOP1
