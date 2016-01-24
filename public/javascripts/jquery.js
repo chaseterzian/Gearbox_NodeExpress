@@ -76,33 +76,33 @@ $(document).ready(function() {
 			$('video').get(0).play()
 			$('video').get(1).play()
 		}, 0);
-		carMovementInWords(dataDownFlagstaff1, 0, 18000, 5, 2, 3, 11, 10);
+		carMovementInWords(dataDownFlagstaff1, 0, 39186, 5, 2, 3, 11, 10);
 		// 0,1,2,6,7,8,9,11
-		liveDataPrintOut(dataDownFlagstaff1, 0, 18000, 5, 1);
+		liveDataPrintOut(dataDownFlagstaff1, 0, 39186, 5, 1);
 		// 0,1,2,6,12
-		warningMessages(dataDownFlagstaff1, 0, 18000, 5, 2, 3, 11);
+		warningMessages(dataDownFlagstaff1, 0, 39186, 5, 2, 3, 11);
 		// 0,1,2,6,7,8,9
-		reportDetailsFull(dataDownFlagstaff1, 0, 18000, 100, 1, 1, 8);
+		reportDetailsFull(dataDownFlagstaff1, 0, 39186, 100, 1, 1, 8);
 		// 0,1,2,6,7,8,9
-		carMovementAndPositionVisuals(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 15);
+		carMovementAndPositionVisuals(dataDownFlagstaff1, 0, 39186, 60, 60, 2, 5, 2, 3, 11, 15);
 		// 0,1,2,3,4,5,6,7,8,9,10
-		carModelFromBack(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 15);
+		carModelFromBack(dataDownFlagstaff1, 0, 39186, 60, 60, 2, 5, 2, 3, 11, 15);
 		// 0,1,2,3,4,5,6,7,8,9,10
 		// steeringWheelModel(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 15);
 		// 0,1,2,3,4,5,6,10
-		orientation(dataDownFlagstaff1, 0, 18000, 5);
+		orientation(dataDownFlagstaff1, 0, 39186, 5);
 		// 0,1,2,6
-		reportContentAccelerometerVisuals(dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 10);
+		reportContentAccelerometerVisuals(dataDownFlagstaff1, 0, 39186, 60, 60, 2, 5, 2, 3, 11, 10);
 		// 0,1,2,3,4,5,6,7,8,9,10
-		movementXy1Point(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 20);
+		movementXy1Point(dataDownFlagstaff1, 0, 39186, 60, 60, 1, 5, 3, 20);
 		//0,1,2,3,4,6,7,8,10
-		movementXy1PointForTesting(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 20);
+		movementXy1PointForTesting(dataDownFlagstaff1, 0, 39186, 60, 60, 1, 5, 3, 20);
 		                // tireForces(dataDownFlagstaff1, 0, 18000, 60, 60, 1, 5, 3, 10);
 
 	});
 	$('form').on('submit', function(e) {
 		e.preventDefault();
-		var parameterData = [dataDownFlagstaff1, 0, 18000, 60, 60, 2, 5, 2, 3, 11, 1, 1, 1, 30];
+		var parameterData = [dataDownFlagstaff1, 0, 39186, 60, 60, 2, 5, 2, 3, 11, 1, 1, 1, 30];
 		var fileContents = [];
 		$('#run-program-button').show();
 		$('#parameter-input-submit-button').css("background-color", "gray");
