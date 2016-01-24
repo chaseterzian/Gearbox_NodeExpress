@@ -137,11 +137,11 @@ $(document).ready(function() {
 
 		document.getElementById("set-parameters-window").innerHTML = "Profile Loaded";
 		document.getElementById("parameter-input-submit-button").innerHTML = "Run Program";
-		console.log(parameterData);
-		console.log(fileContents);
-		sessionStorage.setItem("UserChoices", parameterData);
-		console.log(sessionStorage);
-		console.log(localStorage);
+		// console.log(parameterData);
+		// console.log(fileContents);
+		// sessionStorage.setItem("UserChoices", parameterData);
+		// console.log(sessionStorage);
+		// console.log(localStorage);
 
 		$('#run-program-button').on('click', function() {
 			$('#report-button').css('background-color', 'red');
